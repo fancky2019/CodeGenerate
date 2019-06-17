@@ -1,0 +1,10 @@
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\bin\Debug\5sPowerCodeGenerate.exe.config
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\bin\Debug\5sPowerCodeGenerate.exe
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\bin\Debug\5sPowerCodeGenerate.pdb
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\obj\Debug\5sPowerCodeGenerate.csprojResolveAssemblyReference.cache
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\obj\Debug\_5spowerCodeGeneration.FrmSelectTabel.resources
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\obj\Debug\_5spowerCodeGeneration.MyGenerator.resources
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\obj\Debug\_5sPowerCodeGenerate.Properties.Resources.resources
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\obj\Debug\5sPowerCodeGenerate.csproj.GenerateResource.Cache
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\obj\Debug\5sPowerCodeGenerate.exe
+D:\Code\Dependencies\ModelCodeGeneration\5sPowerCodeGenerate\5sPowerCodeGenerate\obj\Debug\5sPowerCodeGenerate.pdb
