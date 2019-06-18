@@ -67,6 +67,10 @@ namespace _5sPowerCodeGenerate
             {
                 return "DateTimeOffset";
             }
+            else if (name == "timestamp")
+            {
+                return "byte[]";
+            }
             else
             {
                 return "string";
@@ -152,7 +156,9 @@ namespace _5sPowerCodeGenerate
 
         public static string GetIsNullable(string type, bool isNull)
         {
-            if (type == "bool" || type == "int" || type == "Guid" || type == "short" || type == "long" || type == "DateTime" || type == "double" || type == "decimal" || type == "DateTimeOffset")
+            if (type == "bool" || type == "int" || type == "Guid" || type == "short" || type == "long" ||
+                type == "DateTime" || type == "double" || type == "decimal" || type == "DateTimeOffset"
+                || type == "timestamp")
             {
                 if (isNull)
                     return "?";
