@@ -157,8 +157,7 @@ namespace _5sPowerCodeGenerate
         public static string GetIsNullable(string type, bool isNull)
         {
             if (type == "bool" || type == "int" || type == "Guid" || type == "short" || type == "long" ||
-                type == "DateTime" || type == "double" || type == "decimal" || type == "DateTimeOffset"
-                || type == "timestamp")
+                type == "DateTime" || type == "double" || type == "decimal" || type == "DateTimeOffset" )
             {
                 if (isNull)
                     return "?";

@@ -29,3 +29,4 @@ D:\fancky\C#\Git\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.csproj.Generat
 D:\fancky\C#\Git\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.csproj.CoreCompileInputs.cache
 D:\fancky\C#\Git\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.exe
 D:\fancky\C#\Git\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.pdb
+D:\fancky\C#\Git\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.csprojAssemblyReference.cache
