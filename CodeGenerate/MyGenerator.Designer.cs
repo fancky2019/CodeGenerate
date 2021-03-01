@@ -1,6 +1,6 @@
 ﻿namespace CodeGenerator
 {
-    partial class MyGenerator
+    partial class MyGeneratorFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -46,7 +46,7 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSelectTable = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -110,7 +110,7 @@
             this.groupBox2.Controls.Add(this.checkBox4);
             this.groupBox2.Controls.Add(this.checkBox3);
             this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.btnSelectTable);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
@@ -247,15 +247,15 @@
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.Visible = false;
             // 
-            // button3
+            // btnSelectTable
             // 
-            this.button3.Location = new System.Drawing.Point(376, 18);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "选择表";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnSelectTable.Location = new System.Drawing.Point(376, 18);
+            this.btnSelectTable.Name = "btnSelectTable";
+            this.btnSelectTable.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectTable.TabIndex = 7;
+            this.btnSelectTable.Text = "选择表";
+            this.btnSelectTable.UseVisualStyleBackColor = true;
+            this.btnSelectTable.Click += new System.EventHandler(this.btnSelectTable_Click);
             // 
             // button2
             // 
@@ -390,7 +390,7 @@
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // MyGenerator
+            // MyGeneratorFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -400,7 +400,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "MyGenerator";
+            this.Name = "MyGeneratorFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "代码生成器";
             this.groupBox2.ResumeLayout(false);
@@ -417,7 +417,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSelectTable;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

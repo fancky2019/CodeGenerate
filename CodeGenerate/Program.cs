@@ -17,7 +17,7 @@ namespace CodeGenerator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MyGenerator());
+            Application.Run(new MyGeneratorFrm());
         }
     }
 }

@@ -13,19 +13,19 @@ using CodeGenerator;
 
 namespace CodeGenerator
 {
-    public partial class MyGenerator : Form
+    public partial class MyGeneratorFrm : Form
     {
         string connectstring;   //数据库连接字符串
         SqlConnection cn;       //数据库连接对象
         List<ProcedureInfo> list = new List<ProcedureInfo>();   //表对象
         public List<string> Allli = new List<string>();         //所有表
-        public List<string> li = new List<string>();            //所关联的表
+        private List<string> _selectedTableNames = new List<string>();            //所关联的表
         string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);  //默认桌面路径
         string userId = "";        //用户名
         string password = "";      //密码
         string database = "master";//数据库
         string table = "";         //当前表名
-        public MyGenerator()
+        public MyGeneratorFrm()
         {
             InitializeComponent();
         }
@@ -89,25 +89,32 @@ namespace CodeGenerator
         #endregion
 
         #region 选择表
-        private void button3_Click(object sender, EventArgs e)
+        private void btnSelectTable_Click(object sender, EventArgs e)
         {
             cn.Open();
             cn.ChangeDatabase(comboBox1.Text);
             SqlCommand cm = new SqlCommand("select name from sys.Tables", cn);
             SqlDataReader dr = cm.ExecuteReader();
-            li.Clear();
+            _selectedTableNames.Clear();
             while (dr.Read())
             {
-                li.Add(dr[0].ToString());
+                _selectedTableNames.Add(dr[0].ToString());
 
             }
             dr.Close();
             cn.Close();
-            FrmSelectTabel a = new FrmSelectTabel(li);
-            a.form3 = this;
-            a.ShowDialog();
+            SelectTabelFrm selectTabelFrm = new SelectTabelFrm(_selectedTableNames);
+
+            selectTabelFrm.FormClosing += (s,ee)=>
+            {
+                this._selectedTableNames = selectTabelFrm.SelectedTableNames;
+            };
+
+            selectTabelFrm.ShowDialog();
 
         }
+
+    
         #endregion
 
         #region 选择数据库
@@ -118,13 +125,13 @@ namespace CodeGenerator
             {
                 cn.Open();
                 cn.ChangeDatabase(comboBox1.Text);
-                li.Clear();
+                _selectedTableNames.Clear();
                 SqlCommand cm = new SqlCommand("select name from sys.Tables", cn);
                 using (SqlDataReader dr = cm.ExecuteReader(CommandBehavior.CloseConnection))
                 {
                     while (dr.Read())
                     {
-                        li.Add(dr[0].ToString());
+                        _selectedTableNames.Add(dr[0].ToString());
                     }
                 }
             }
@@ -176,7 +183,7 @@ namespace CodeGenerator
         /// <param name="e"></param>
         private void button5_Click(object sender, EventArgs e)
         {
-            li.Clear();
+            _selectedTableNames.Clear();
             if (string.IsNullOrEmpty(textBox6.Text))
             {
                 MessageBox.Show("请输入SQL查询语句");
@@ -229,11 +236,11 @@ namespace CodeGenerator
 
                 progressBar1.Value = 0;
                 progressBar1.Minimum = 0;
-                progressBar1.Maximum = li.Count;
+                progressBar1.Maximum = _selectedTableNames.Count;
 
                 if (type != "sql")
                 {
-                    foreach (string tablename in li)
+                    foreach (string tablename in _selectedTableNames)
                     {
                         string sql = "SELECT col.name AS 列名, typ.name as 数据类型,col.max_length AS 占用字节数," +
                                "  col.is_nullable  AS 是否允许非空,col.is_identity  AS 是否自增," +
