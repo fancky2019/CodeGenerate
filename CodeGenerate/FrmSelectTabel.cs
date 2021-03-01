@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace _5spowerCodeGeneration
+namespace CodeGenerator
 {
     public partial class FrmSelectTabel : Form
     {

@@ -1,0 +1,11 @@
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerator.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerator.FrmSelectTabel.resources
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerator.MyGenerator.resources
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.Properties.Resources.resources
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerator.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerator.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.exe
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.pdb
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\bin\Debug\CodeGenerate.exe.config
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\bin\Debug\CodeGenerate.exe
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\bin\Debug\CodeGenerate.pdb
