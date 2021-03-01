@@ -12,19 +12,17 @@ namespace CodeGenerator
     public partial class SelectTabelFrm : Form
     {
         private List<string> _tableNameList;
+        List<Panel> _listPanel = new List<Panel>();
 
         public List<string> SelectedTableNames { get; set; }
 
-        public SelectTabelFrm()
-        {
-            InitializeComponent();
-        }
         public SelectTabelFrm(List<string> tableNameList)
         {
             InitializeComponent();
             this._tableNameList = tableNameList;
+            SelectedTableNames = new List<string>();
         }
-        List<Panel> listPanel = new List<Panel>();
+
         private void Form2_Load(object sender, EventArgs e)
         {
             DisplayTables(this._tableNameList);
@@ -32,7 +30,7 @@ namespace CodeGenerator
 
         private void DisplayTables(List<string> tableNames)
         {
-            listPanel.Clear();
+            _listPanel.Clear();
             this.panelTableNames.Controls.Clear();
             this.panel2.Controls.Clear();
             //List<string> list = ((Form1)Owner).list;
@@ -98,7 +96,7 @@ namespace CodeGenerator
                         y = 0;
                     }
                 }
-                listPanel.Add(tablesPanel);
+                _listPanel.Add(tablesPanel);
             }
         }
 
@@ -107,9 +105,9 @@ namespace CodeGenerator
             panelTableNames.Controls.Clear();
             int i = Convert.ToInt32((sender as LinkLabel).Text);
             Panel pa = new Panel();
-            if (listPanel.Count > 0)
+            if (_listPanel.Count > 0)
             {
-                pa = listPanel[i - 1];
+                pa = _listPanel[i - 1];
             }
             foreach (var control in pa.Controls)
             {
@@ -156,10 +154,8 @@ namespace CodeGenerator
             }
         }
 
-
         private void button2_Click(object sender, EventArgs e)
         {
-            SelectedTableNames = new List<string>();
             for (int i = 0; i < panelTableNames.Controls.Count; i++)
             {
 
@@ -176,6 +172,7 @@ namespace CodeGenerator
             }
             this.Close();
         }
+
         /// <summary>
         /// 分页
         /// </summary>
