@@ -1,4 +1,4 @@
-﻿namespace _5spowerCodeGeneration
+﻿namespace CodeGenerator
 {
     partial class FrmSelectTabel
     {

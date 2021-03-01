@@ -9,9 +9,9 @@ using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
 using System.Threading;
-using _5sPowerCodeGenerate;
+using CodeGenerator;
 
-namespace _5spowerCodeGeneration
+namespace CodeGenerator
 {
     public partial class MyGenerator : Form
     {

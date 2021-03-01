@@ -30,3 +30,14 @@ D:\fancky\C#\Git\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.csproj.CoreCom
 D:\fancky\C#\Git\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.exe
 D:\fancky\C#\Git\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.pdb
 D:\fancky\C#\Git\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\bin\Debug\CodeGenerate.exe.config
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\bin\Debug\CodeGenerate.exe
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\bin\Debug\CodeGenerate.pdb
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGeneration.FrmSelectTabel.resources
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGeneration.MyGenerator.resources
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.Properties.Resources.resources
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.exe
+C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.pdb
