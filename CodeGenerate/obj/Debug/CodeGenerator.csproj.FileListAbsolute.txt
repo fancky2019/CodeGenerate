@@ -9,3 +9,14 @@ C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\obj\Debug\CodeGenerate.p
 C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\bin\Debug\CodeGenerate.exe.config
 C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\bin\Debug\CodeGenerate.exe
 C:\Users\admin\Desktop\CodeGenerate-master\CodeGenerate\bin\Debug\CodeGenerate.pdb
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\bin\Debug\CodeGenerate.exe.config
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\bin\Debug\CodeGenerate.exe
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\bin\Debug\CodeGenerate.pdb
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerator.csprojAssemblyReference.cache
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerator.FrmSelectTabel.resources
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerator.MyGenerator.resources
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.Properties.Resources.resources
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerator.csproj.GenerateResource.cache
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerator.csproj.CoreCompileInputs.cache
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.exe
+D:\fancky\git\C#\CodeGenerate\CodeGenerate\obj\Debug\CodeGenerate.pdb
