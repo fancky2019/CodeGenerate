@@ -11,19 +11,24 @@ namespace CodeGenerator
 {
     public partial class FrmSelectTabel : Form
     {
-        List<string> list = null;
+        List<string> tableNameList = null;
         public MyGenerator form3;
         public FrmSelectTabel()
         {
             InitializeComponent();
         }
-        public FrmSelectTabel(List<string> list)
+        public FrmSelectTabel(List<string> tableNameList)
         {
             InitializeComponent();
-            this.list = list;
+            this.tableNameList = tableNameList;
         }
          List<Panel> listpanel = new List<Panel>();
         private void Form2_Load(object sender, EventArgs e)
+        {
+            DisplayTables(this.tableNameList);
+        }
+
+        private void DisplayTables(List<string> tableNames)
         {
             listpanel.Clear();
             this.panel1.Controls.Clear();
@@ -31,9 +36,9 @@ namespace CodeGenerator
             //List<string> list = ((Form1)Owner).list;
             int x = 2; int y = 0;
             int x1 = 2;
-            int i=0;
-            int y1=12;
-            List<List<Object>> listAll= GetChangePage(list.Cast<Object>().ToList(), 70);
+            int i = 0;
+            int y1 = 12;
+            List<List<Object>> listAll = GetChangePage(tableNames.Cast<Object>().ToList(), 70);
             Panel p = null;
             LinkLabel ll = null;
             CheckBox ch = null;
@@ -48,19 +53,19 @@ namespace CodeGenerator
                 p.Name = "p-" + i;
                 p.Tag = i;
                 p.Dock = DockStyle.Fill;
-                
+
                 ll = new LinkLabel();
                 this.panel2.Controls.Add(ll);
                 ll.Name = "llll" + i;
                 ll.Text = i.ToString();
-                ll.Left =x1;
+                ll.Left = x1;
                 ll.AutoSize = true;
                 x1 += ll.Width;
                 ll.Top = y1;
                 ll.ForeColor = Color.Black;
                 ll.Width = 7;
-                
-                
+
+
                 ll.Click += new EventHandler(ll_Click);
                 x1 += ll.Width;
                 x = 2;
@@ -91,8 +96,6 @@ namespace CodeGenerator
                 }
                 listpanel.Add(p);
             }
-  
-            
         }
 
         void ll_Click(object sender, EventArgs e)
@@ -186,7 +189,7 @@ namespace CodeGenerator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            list=new List<string> ();
+            tableNameList=new List<string> ();
             for (int i = 0; i < panel1.Controls.Count; i++)
             {
 
@@ -197,11 +200,11 @@ namespace CodeGenerator
                     {
                         CheckBox ch = con as CheckBox;
                         if (ch.Checked)
-                            list.Add(ch.Text);
+                            tableNameList.Add(ch.Text);
                     }
                 }
             }
-            form3.li = list;
+            form3.li = tableNameList;
             this.Close();
         }
         /// <summary>
@@ -242,6 +245,12 @@ namespace CodeGenerator
             //    name = name.Substring(0, 9) + "...";
             //}
             return name;
+        }
+
+        private void btnQuery_Click(object sender, EventArgs e)
+        {
+            var result = this.tableNameList.Where(p => p.Contains(this.txtTableName.Text.Trim())).ToList();
+            DisplayTables(result);
         }
     }
 }

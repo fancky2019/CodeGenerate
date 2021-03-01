@@ -36,10 +36,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnQuery = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnQuery = new System.Windows.Forms.Button();
+            this.txtTableName = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -129,32 +129,6 @@
             this.panel4.Size = new System.Drawing.Size(747, 337);
             this.panel4.TabIndex = 11;
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnQuery);
-            this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(747, 38);
-            this.panel5.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(26, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 0;
-            // 
-            // btnQuery
-            // 
-            this.btnQuery.Location = new System.Drawing.Point(132, 9);
-            this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(75, 23);
-            this.btnQuery.TabIndex = 1;
-            this.btnQuery.Text = "查询";
-            this.btnQuery.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -163,6 +137,33 @@
             this.panel1.Size = new System.Drawing.Size(747, 248);
             this.panel1.TabIndex = 10;
             this.panel1.Tag = "is1";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btnQuery);
+            this.panel5.Controls.Add(this.txtTableName);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(747, 38);
+            this.panel5.TabIndex = 9;
+            // 
+            // btnQuery
+            // 
+            this.btnQuery.Location = new System.Drawing.Point(188, 9);
+            this.btnQuery.Name = "btnQuery";
+            this.btnQuery.Size = new System.Drawing.Size(75, 23);
+            this.btnQuery.TabIndex = 1;
+            this.btnQuery.Text = "查询";
+            this.btnQuery.UseVisualStyleBackColor = true;
+            this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
+            // 
+            // txtTableName
+            // 
+            this.txtTableName.Location = new System.Drawing.Point(3, 9);
+            this.txtTableName.Name = "txtTableName";
+            this.txtTableName.Size = new System.Drawing.Size(179, 21);
+            this.txtTableName.TabIndex = 0;
             // 
             // FrmSelectTabel
             // 
@@ -197,7 +198,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnQuery;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTableName;
         private System.Windows.Forms.Panel panel1;
     }
 }

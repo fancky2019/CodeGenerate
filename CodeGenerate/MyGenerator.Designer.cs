@@ -340,7 +340,7 @@
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(148, 21);
             this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "123456";
+            this.textBox3.Text = "123qwe!@#QWE";
             // 
             // textBox2
             // 
@@ -356,7 +356,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(148, 21);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "127.0.0.1";
+            this.textBox1.Text = "106.14.212.77";
             // 
             // label3
             // 
